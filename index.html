@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+          <h1 id="title">Enquête de satisfaction</h1>
+          <p id="description">Aidez nous à améliorer notre site</p>
+        </header>
+        
+        <form id="survey-form">
+          
+          <div class="form-group">
+            <label id="name-label" for="name">Nom</label>
+            <input type="text"
+                   name="name"
+                   id="name"
+                   class="form-style"
+                   placeholder="Entrez votre nom"
+                   required
+                 >
+          </div>
+            
+          <div class="form-group">
+            <label id="surname-label" for="surname">Prénom</label>
+            <input type="text"
+                   name="surname"
+                   id="surname"
+                   class="form-style"
+                   placeholder="Entrez votre prénom"
+                   required
+                   >
+          </div>
+          
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email"
+                   name="email"
+                   id="email"
+                   class="form-style"
+                   placeholder="Email"
+                   required
+                   >
+          </div>
+          
+          <div class="form-group">
+            <label id="number-label" for="number">Tél <span class="option">(facultatif)</span></label>
+            <input type="tel"
+                   name="phone"
+                   id="phone"
+                   class="form-style"
+                   placeholder="Téléphone"
+                   >     
+          </div>
+          
+          <div class="form-group">
+            <p>Quelle est votre fréquence d'utilisation du site ? </p>
+            <select name="user" id="user" class="form-style" required>
+              <option disabled selected value>Sélectionnez une option</option>
+              <option value="frequent">Tous les jours</option>
+              <option value="medium">Une fois par semaine</option>
+              <option value="rare">Une fois par mois ou moins</option>
+            </select>    
+          </div>
+      
+          <div class="form-group">
+            <p>Recommanderiez-vous ce site à un ami ?</p>
+            
+            <label><input type="radio"
+                   name="user-recommand"
+                   value="recommanded"
+                   class="input-radio"
+                   id="recommanded"
+                   checked            
+                   > Tout à fait</label>
+            
+            <label><input type="radio"
+                   name="user-recommand"
+                   value="maybe"
+                   class="input-radio"
+                   id="maybe"
+                   > Peut-être</label>
+            
+            <label><input type="radio"
+                   name="user-recommand"
+                   value="not-sure"
+                   class="input-radio"
+                   id="not-sure"
+                   > Pas sûr</label>
+          </div>
+          
+          <div class="form-group">
+             <p>Quelle est votre fonctionnalité favorite ?</p> 
+             <select name="favorite-feature" id="favorite-feature" class="form-style" required>
+            <option disabled selected value>Sélectionnez une option</option>
+            <option value="fct1">Les cours</option>
+            <option value="fct2">Les exercices</option>
+            <option value="fct3">Les lives</option>
+             </select>
+          </div>
+        
+          <div class="form-group">
+            <p>Selon vous, qu'est ce qui pourrait être amélioré parmi la liste suivante ? <span class="option">(plusieurs options possibles)</span></p>
+            
+            <label><input type="checkbox"
+                   name="improved"
+                   value="videos"
+                   class="input-checkbox"
+                   id="videos"
+                   > Les cours videos</label>
+            
+            <label><input type="checkbox"
+                   name="improved"
+                   value="written-courses"
+                   class="input-checkbox"
+                   id="written-courses"
+                   > Les cours écrits</label>
+            
+            <label><input type="checkbox"
+                   name="improved"
+                   value="live"
+                   class="input-checkbox"
+                   id="live"
+                   > Les lives</label>
+            
+            <label><input type="checkbox"
+                   name="improved"
+                   value="exercizes"
+                   class="input-checkbox"
+                   id="exercizes"
+                   > Les exercices</label>
+            
+            <label><input type="checkbox"
+                   name="improved"
+                   value="following"
+                   class="input-checkbox"
+                   id="following"
+                   > Le suivi pédagogique</label>
+            
+            <label><input type="checkbox"
+                   name="improved"
+                   value="forum"
+                   class="input-checkbox"
+                   id="forum"
+                   > Le forum</label>
+          </div>
+          
+          <div class="form-group">
+            <p>Avez vous des commentaires ou des suggestions ?</p>
+            <textarea name="textarea"
+                      id="textarea"
+                      class="input-textarea"
+                      placeholder="Ecrivez votre commentaire ici..."
+            ></textarea>
+          </div>
+        
+         <div class="form-group">
+           <button type="submit">Soumettre</button>
+         </div>
+        </form>
+        
+        
+      </div>
+</body>
+</html>

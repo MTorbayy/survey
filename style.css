@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  color: white;
+  background:linear-gradient(RGBA(33,46,83,.8), RGBA(33,46,83,0.5)),url(https://www.campusfrance.org/sites/default/files/styles/desktop_paragraph_parallax/public/medias/images/2017-10/bourses%20et%20possibilit%C3%A9s%20de%20financement%20%28corps%20du%20texte%29_etudiants.jpg?h=16a6d817&itok=VvxWo8dn);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+header {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+header p {
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 1.1rem
+}
+
+#title {
+  margin-bottom: 0px; 
+  font-weight: 500;
+  font-size: 2.25rem
+}
+
+#survey-form {
+  background: RGBA(74,145,158,0.8);
+  font-size: 1.15rem;
+  width: 750px;
+  border-radius: 5px;
+  margin: 0 auto 0 auto;
+  padding-top: 2.5%;
+  padding-bottom: 3%;
+  box-shadow: 5px 5px 10px black;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 7% 0 7%;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.input-radio {
+  
+}
+
+.form-style {
+  height: 35px;
+  border: 1px solid RGBA(33,46,83,1);
+  border-radius: 0.25rem;
+}
+
+input,
+select,
+textarea,
+button {
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+button {
+  height: 35px;
+  border: none;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  background: #D46F4D;
+  color: white;
+  font-size: 1.12rem;
+}
+
+textarea {
+  border: 1px solid RGBA(33,46,83,1);
+  border-radius: 0.1rem;
+  height: 150px;
+}
+
+/*supression flèches bouton Tél*/ 
+#number {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  #survey-form {
+    width: 90%;
+  }
+}
